@@ -1,0 +1,75 @@
+Algoritmo "XP2"
+
+Var
+
+n1, n2, resultado, par_impar: real
+operacao: inteiro
+Inicio
+
+Escreval ("Olá! Seja bem-vindo ao programa!")
+Escreval ("")
+Escreval ("        Vamos começar!")
+Escreval ("")
+Escreval ("Digite um número!")
+Escreva ("Digite aqui: ")
+Leia (n1)
+Escreval ("")
+Escreval ("Digite outro número!")
+Escreva ("Digite aqui: ")
+Leia (n2)
+Limpatela
+Escreval ("Escolha a operação que deseja realizar!")
+Escreval ("1 - Adição")
+Escreval ("2 - Subtração")
+Escreval ("3 - Multiplicação")
+Escreval ("4 - Divisão")
+Escreva ("Digite aqui: ")
+Leia(operacao)
+
+Escolha (operacao)
+caso 1
+     resultado <- n1+n2
+caso 2
+     resultado <- n1-n2
+caso 3
+     resultado <- n1*n2
+caso 4
+     resultado <- n1/n2
+outrocaso
+         Escreva ("Erro! tente novamente!")
+         fimalgoritmo
+fimescolha
+
+Se (resultado = 0) entao
+   Escreval ("")
+   Escreval ("O resultado é nulo!")
+senao
+     Se (resultado > 0) entao
+     Escreval ("")
+     Escreval ("O resultado é maior que 0!")
+     senao
+          Se (resultado < 0) entao
+          Escreval ("")
+          Escreval ("O resultado é menor que 0!")
+          Fimse
+     Fimse
+Fimse
+
+
+par_impar <- resultado
+Se (par_impar % 2 = 0) entao
+   Escreval ("O número é par")
+senao
+   Escreval ("O número é Impar")
+fimse
+
+
+Se (resultado = int(resultado)) entao
+   Escreval ("Número é inteiro")
+Senao
+   Escreval ("Número é decimal")
+fimse
+
+
+
+Fimalgoritmo
